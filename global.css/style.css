@@ -1,0 +1,92 @@
+/* Estilos gerais (mobile-first) */
+body {
+    font-family: monospace;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    width: 90%; /* Mais largura em mobile */
+    max-width: 300px;
+    background-color: cyan;
+    font-size: 18px; /* Tamanho menor para mobile */
+    border-radius: 10px;
+    padding: 10px; /* Padding menor */
+    margin: 8px auto;
+    color: rgb(13, 13, 2);
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    padding: 15px 0;
+    color: aliceblue;
+    font-size: 15px; /* Tamanho menor para mobile */
+}
+
+header img {
+    width: 120px; /* Imagem menor em mobile */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 2px 5px rgba(10, 10, 10, 0.2);
+    object-position: center 15%;
+}
+
+footer, p {
+    color: aliceblue;
+    text-align: center;
+    font-size: 14px; /* Tamanho menor para mobile */
+}
+
+/* Media queries para telas maiores (tablets e desktops) */
+@media only screen and (min-width: 600px) {
+    a {
+        width: 80%;
+        font-size: 20px;
+        padding: 12px;
+        margin: 10px auto;
+    }
+    
+    header {
+        padding: 20px 0;
+        font-size: 17px;
+    }
+    
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    footer, p {
+        font-size: 16px;
+    }
+}
+
+/* Media query para telas muito grandes */
+@media only screen and (min-width: 1024px) {
+    
+}
