@@ -1,13 +1,14 @@
 /* ================= ESTILOS GERAIS ================= */
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Alterado para flex-start para melhor ajuste */
     background: linear-gradient(135deg, #0a0a2a, #000033);
     font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
 }
 
 /* ================= CONTAINER PRINCIPAL ================= */
@@ -17,58 +18,61 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     border-radius: 20px;
     border: 2px solid #00f7ff;
     box-shadow: 0 0 25px rgba(0, 247, 255, 0.6);
+    margin: 10px 0;
 }
 
 /* ================= CABEÇALHO ================= */
 header {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     color: aliceblue;
-    font-size: 17px;
+    font-size: 16px;
     width: 100%;
 }
 
 header img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #00f7ff;
     box-shadow: 0 0 20px rgba(0, 247, 255, 0.7);
     object-position: center 15%;
-    margin-bottom: 15px;
-    
+    margin-bottom: 10px;
 }
 
 /* ================= TÍTULOS E TEXTO ================= */
 h1 {
-    margin: 10px 0;
+    margin: 8px 0;
     color: #00f7ff;
     text-shadow: 0 0 10px rgba(0, 247, 255, 0.8);
+    font-size: 1.4rem;
 }
 
 h2 {
     margin: 5px 0;
-    font-size: 1.2em;
+    font-size: 1.1rem;
     color: #00f7ff;
 }
 
 p {
     color: aliceblue;
-    margin: 10px 0;
+    margin: 8px 0;
+    font-size: 0.9rem;
 }
 
 /* ================= LISTA DE BOTÕES ================= */
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 20px auto;
-    width: 200px;
+    margin: 15px auto;
+    width: 170px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,19 +82,18 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 /* ================= ESTILO DOS BOTÕES ================= */
 a {
     display: block;
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
     background-color: transparent;
     border: 2px solid #00f7ff;
-    font-size: 20px;
+    font-size: 1rem;
     border-radius: 10px;
-    padding: 12px;
+    padding: 14px;
     margin: 0 auto;
     color: #00f7ff;
     text-decoration: none;
@@ -111,37 +114,70 @@ footer {
     color: #00f7ff;
     text-align: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
     margin-top: auto;
     text-shadow: 0 0 8px rgba(0, 247, 255, 0.5);
+    font-size: 0.8rem;
 }
 
 /* ================= MEDIA QUERIES ================= */
-@media (max-width: 768px) {
-    /* ... outros estilos ... */
-    
-    a {
-        width: 95%; /* Aumenta a largura */
-        padding: 14px; /* Aumenta o padding */
-        font-size: 1.1rem; /* Aumenta o tamanho da fonte */
-    }
-}
-
 @media (max-width: 480px) {
-    /* ... outros estilos ... */
+    body {
+        padding: 8px;
+        align-items: center;
+    }
+    
+    .container {
+        padding: 12px;
+        border-radius: 15px;
+        margin: 5px 0;
+    }
+    
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    h1 {
+        font-size: 1.3rem;
+    }
+    
+    ul {
+        max-width: 100%;
+        padding: 0 10px;
+    }
     
     a {
-        width: 98%; /* Quase a largura total */
-        padding: 16px; /* Mais espaço interno */
-        font-size: 1.2rem; /* Fonte maior */
+        padding: 16px;
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 360px) {
-    /* ... outros estilos ... */
+    body {
+        padding: 5px;
+    }
+    
+    .container {
+        padding: 10px;
+        border-radius: 12px;
+    }
+    
+    header img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    h1 {
+        font-size: 1.2rem;
+    }
     
     a {
-        padding: 18px; /* Ainda maior */
-        font-size: 1.3rem; /* Fonte mais legível */
+        padding: 15px;
+        font-size: 1rem;
+    }
+    
+    footer {
+        padding: 10px 0;
     }
 }
