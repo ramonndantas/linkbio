@@ -14,11 +14,10 @@ body {
 .container {
     background-color: rgba(8, 8, 44, 0.9);
     display: flex;
-    width: 600px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 20px;
     border: 2px solid #00f7ff;
