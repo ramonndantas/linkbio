@@ -84,8 +84,8 @@ li {
 /* ================= ESTILO DOS BOTÕES ================= */
 a {
     display: block;
-    width: 80%;
-    max-width: 300px;
+    width: 90%;
+    max-width: 500px;
     background-color: transparent;
     border: 2px solid #00f7ff;
     font-size: 20px;
@@ -118,73 +118,30 @@ footer {
 
 /* ================= MEDIA QUERIES ================= */
 @media (max-width: 768px) {
-    .container {
-        width: 95%; /* Mais espaço nas laterais */
-        min-height: 650px; /* Altura reduzida */
-        padding: 15px;
-    }
-    
-    header img {
-        width: 100px;
-        height: 100px;
-    }
-    
-    h1 {
-        font-size: 1.3rem;
-    }
-    
-    h2 {
-        font-size: 1.1em;
-    }
+    /* ... outros estilos ... */
     
     a {
-        padding: 10px;
-        font-size: 0.9rem;
+        width: 95%; /* Aumenta a largura */
+        padding: 14px; /* Aumenta o padding */
+        font-size: 1.1rem; /* Aumenta o tamanho da fonte */
     }
 }
 
 @media (max-width: 480px) {
-    .container {
-        border-radius: 15px;
-        min-height: 600px;
-    }
+    /* ... outros estilos ... */
     
-    header {
-        padding: 15px 0;
-    }
-    
-    header img {
-        width: 80px;
-        height: 80px;
-    }
-    
-    h1 {
-        font-size: 1.2rem;
-    }
-    
-    p {
-        font-size: 0.8rem;
-    }
-    
-    ul {
-        width: 100%;
-    }
-    
-    footer {
-        padding: 15px 0;
+    a {
+        width: 98%; /* Quase a largura total */
+        padding: 16px; /* Mais espaço interno */
+        font-size: 1.2rem; /* Fonte maior */
     }
 }
 
 @media (max-width: 360px) {
-    .container {
-        min-height: 550px;
-    }
-    
-    h1 {
-        font-size: 1.1rem;
-    }
+    /* ... outros estilos ... */
     
     a {
-        padding: 8px;
+        padding: 18px; /* Ainda maior */
+        font-size: 1.3rem; /* Fonte mais legível */
     }
 }
