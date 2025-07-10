@@ -1,76 +1,118 @@
-/* Estilos gerais do corpo da página */
-    body {
-        font-family: monospace;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        margin: 0; /* Remove margens padrão do navegador */
-        padding: 0; /* Remove paddings padrão do navegador */
-         /* Define a família de fontes */
-    }
+/* ================= ESTILOS GERAIS ================= */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0a0a2a, #000033);
+    font-family: 'Segoe UI', sans-serif;
+}
 
-    /* Estilização dos links */
-    a {
-        display: block; /* Transforma em elemento de bloco (ocupa toda a linha) */
-        width: 80%; /* Largura de 80% do elemento pai */
-        max-width: 300px; /* Largura máxima de 300px */
-        background-color: cyan; 
-        font-size: 20px; /* Tamanho da fonte */
-        border-radius: 10px; /* Bordas arredondadas */
-        padding: 12px; /* Espaçamento interno */
-        margin: 10px auto; /* Margem: 10px top/bottom e auto para centralizar horizontalmente */
-        color: rgb(13, 13, 2); /* Cor do texto */
-        text-decoration: none; /* Remove sublinhado padrão dos links */
-        text-align: center; /* Centraliza o texto */
-        transition: background-color 0.3s; /* Suaviza a transição de cor no hover */
-        
-    }
+/* ================= CONTAINER PRINCIPAL ================= */
+.container {
+    background-color: rgba(8, 8, 44, 0.9);
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid #00f7ff;
+    box-shadow: 0 0 25px rgba(0, 247, 255, 0.6);
+}
 
-    /* Efeito quando o mouse passa sobre o link */
-    a:hover {
-        background-color: #46d7e7; /* Muda a cor de fundo */
-    }
+/* ================= CABEÇALHO ================= */
+header {
+    text-align: center;
+    padding: 20px 0;
+    color: aliceblue;
+    font-size: 17px;
+    width: 100%;
+}
 
-    /* Estilização da lista não ordenada */
-    ul {
-        list-style-type: none; /* Remove os marcadores de lista */
-        padding: 0; /* Remove padding padrão */
-        margin: 20px auto; /* Margem: 20px top/bottom e auto para centralizar */
-        width: 100%; /* Ocupa 100% da largura disponível */
-        display: flex; /* Ativa o modelo flexbox */
-        flex-direction: column; /* Organiza os itens em coluna */
-        align-items: center; /* Centraliza os itens horizontalmente */
-    }
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00f7ff;
+    box-shadow: 0 0 20px rgba(0, 247, 255, 0.7);
+    object-position: center 15%;
+    margin-bottom: 15px;
+}
 
-    /* Estilização dos itens da lista */
-    li {
-        width: 100%; /* Ocupa 100% da largura disponível */
-        display: flex; /* Ativa o modelo flexbox */
-        justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    }
-  
-    /* Estilização do cabeçalho */
-    header{
-        text-align: center; /* Centraliza o conteúdo */
-        padding: 20px 0; /* Espaçamento interno: 20px top/bottom, 0 left/right */
-        color: aliceblue;
-        font-size: 17px;
-        
-    }
-    
-    /* Estilização da imagem no cabeçalho */
-    header img {
-        width: 150px; /* Largura fixa */
-        height: 150px; /* Altura fixa (mesmo valor para formar círculo perfeito) */
-        border-radius: 50%; /* Transforma em círculo perfeito */
-        object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço sem distorcer */
-        border: 3px solid white; /* Adiciona borda branca */
-        box-shadow: 0 2px 5px rgba(10, 10, 10, 0.2); /* Adiciona sombra sutil */
-        object-position: center 15%;
-    }
+/* ================= TÍTULOS E TEXTO ================= */
+h1 {
+    margin: 10px 0;
+    color: #00f7ff;
+    text-shadow: 0 0 10px rgba(0, 247, 255, 0.8);
+}
 
-    footer, p {
-        color: aliceblue;
-        text-align: center;
-        
-    }
+h2 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #00f7ff;
+}
+
+p {
+    color: aliceblue;
+    margin: 10px 0;
+}
+
+/* ================= LISTA DE BOTÕES ================= */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* ================= ESTILO DOS BOTÕES ================= */
+a {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    background-color: transparent;
+    border: 2px solid #00f7ff;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 0 auto;
+    color: #00f7ff;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 0 15px rgba(0, 247, 255, 0.3);
+}
+
+a:hover {
+    background-color: #00f7ff;
+    color: #000;
+    box-shadow: 0 0 30px rgba(0, 247, 255, 0.8);
+    transform: translateY(-3px);
+}
+
+/* ================= RODAPÉ ================= */
+footer {
+    color: #00f7ff;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: auto;
+    text-shadow: 0 0 8px rgba(0, 247, 255, 0.5);
+}
