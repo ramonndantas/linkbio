@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
     background: linear-gradient(135deg, #0a0a2a, #000033);
     font-family: 'Segoe UI', sans-serif;
     box-sizing: border-box;
@@ -21,11 +21,11 @@ body {
     padding: 15px;
     box-sizing: border-box;
     border-radius: 20px;
-    border: 2px solid #00f7ff;
-    box-shadow: 0 0 25px rgba(0, 247, 255, 0.6);
+    border: 2px solid #e6f7ff; /* Branco gelo */
+    box-shadow: 0 0 25px rgba(230, 247, 255, 0.4); /* Brilho mais suave */
     width: 100%;
-    max-width: 400px; /* Largura máxima para manter proporção */
-    margin: 20px 0; /* Espaço igual nas bordas superior e inferior */
+    max-width: 400px;
+    margin: 20px 0;
 }
 
 /* ================= CABEÇALHO ================= */
@@ -42,8 +42,8 @@ header img {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #00f7ff;
-    box-shadow: 0 0 20px rgba(0, 247, 255, 0.7);
+    border: 3px solid #e6f7ff; /* Branco gelo */
+    box-shadow: 0 0 20px rgba(230, 247, 255, 0.5); /* Brilho mais suave */
     object-position: center 15%;
     margin-bottom: 10px;
 }
@@ -51,15 +51,15 @@ header img {
 /* ================= TÍTULOS E TEXTO ================= */
 h1 {
     margin: 8px 0;
-    color: #00f7ff;
-    text-shadow: 0 0 10px rgba(0, 247, 255, 0.8);
+    color: #e6f7ff; /* Branco gelo */
+    text-shadow: 0 0 10px rgba(230, 247, 255, 0.6); /* Brilho mais suave */
     font-size: 1.4rem;
 }
 
 h2 {
     margin: 5px 0;
     font-size: 1.1rem;
-    color: #00f7ff;
+    color: #e6f7ff; /* Branco gelo */
 }
 
 p {
@@ -92,34 +92,40 @@ a {
     display: block;
     width: 100%;
     background-color: transparent;
-    border: 2px solid #00f7ff;
+    border: 2px solid #e6f7ff; /* Branco gelo */
     font-size: 1rem;
     border-radius: 10px;
     padding: 14px;
     margin: 0 auto;
-    color: #00f7ff;
+    color: #e6f7ff; /* Branco gelo */
     text-decoration: none;
     text-align: center;
     transition: all 0.3s;
-    box-shadow: 0 0 15px rgba(0, 247, 255, 0.3);
+    box-shadow: 0 0 15px rgba(230, 247, 255, 0.2); /* Brilho mais suave */
 }
 
 a:hover {
-    background-color: #00f7ff;
-    color: #000;
-    box-shadow: 0 0 30px rgba(0, 247, 255, 0.8);
+    background-color: #b5dff1; /* Branco gelo */
+    color: #000033; /* Cor do fundo escuro para contraste */
+    box-shadow: 0 0 30px rgba(230, 247, 255, 0.5); /* Brilho mais suave */
     transform: translateY(-3px);
 }
 
 /* ================= RODAPÉ ================= */
 footer {
-    color: #00f7ff;
+    color: #e6f7ff; /* Branco gelo */
     text-align: center;
     width: 100%;
     padding: 15px 0;
     margin-top: auto;
-    text-shadow: 0 0 8px rgba(0, 247, 255, 0.5);
+    text-shadow: 0 0 8px rgba(230, 247, 255, 0.3); /* Brilho mais suave */
     font-size: 0.8rem;
+}
+
+nav ul li a i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #e6f7ff; /* Branco gelo para ícones */
 }
 
 /* ================= MEDIA QUERIES ================= */
